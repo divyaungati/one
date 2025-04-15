@@ -11,7 +11,7 @@
     <header>
         <div class="logo">
             <h1>Sangeetha</h1>
-            <p>Your Favorite Shopping Destination</p>
+            <p>rugadas best app</p>
         </div>
         <nav>
             <ul>
