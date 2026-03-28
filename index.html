@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>TechStyle Bazaar | Mobiles, Laptops & Clothes</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="logo">
+        <h1>TechStyle Bazaar</h1>
+        <span>mobiles · laptops · fashion</span>
+    </div>
+    <div class="nav-links">
+        <a href="#" class="nav-link active" data-section="mobiles">📱 Mobiles</a>
+        <a href="#" class="nav-link" data-section="laptops">💻 Laptops</a>
+        <a href="#" class="nav-link" data-section="clothes">👕 Clothes</a>
+    </div>
+    <div class="cart-icon" id="cartIconBtn">
+        <i class="fas fa-shopping-bag"></i>
+        <span id="cartCount">0</span>
+        <span>Cart</span>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>Shop the latest trends ✨</h2>
+    <p>Gadgets, fashion & tech — exclusive deals with best prices in INR. Free shipping on orders above ₹4999</p>
+</div>
+
+<main>
+    <div id="mobiles-section" class="section-container">
+        <div class="section-title"><i class="fas fa-mobile-alt"></i> 📱 Smartphones</div>
+        <div class="products-grid" id="mobiles-grid"></div>
+    </div>
+    
+    <div id="laptops-section" class="section-container">
+        <div class="section-title"><i class="fas fa-laptop-code"></i> 💻 Laptops</div>
+        <div class="products-grid" id="laptops-grid"></div>
+    </div>
+    
+    <div id="clothes-section" class="section-container">
+        <div class="section-title"><i class="fas fa-tshirt"></i> 👗 Fashion & Clothing</div>
+        <div class="products-grid" id="clothes-grid"></div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 TechStyle Bazaar — All prices in Indian Rupees (INR) | Secure checkout</p>
+</footer>
+
+<!-- Cart Sidebar -->
+<div class="overlay" id="overlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <span><i class="fas fa-shopping-cart"></i> Your Cart</span>
+        <span class="close-cart" id="closeCartBtn">&times;</span>
+    </div>
+    <ul class="cart-items-list" id="cartItemsList">
+        <li style="text-align:center; color:#94a3b8;">Cart is empty</li>
+    </ul>
+    <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotalPrice">₹0</span>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout 🛒</button>
+</div>
+
+<div id="cartToast" class="cart-toast">
+    <i class="fas fa-check-circle"></i> <span id="toastMsg">Item added</span>
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
